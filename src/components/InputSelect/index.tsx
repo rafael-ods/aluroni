@@ -1,8 +1,8 @@
-import { IInputSelect } from "shared/interface/IInputSelect";
-import style from "./selectInput.module.scss";
-import { useState } from "react";
-import classNames from "classnames";
-import { MdOutlineArrowDropDown, MdOutlineArrowDropUp } from "react-icons/md";
+import { IInputSelect } from 'shared/interface/IInputSelect';
+import style from './selectInput.module.scss';
+import { useState } from 'react';
+import classNames from 'classnames';
+import { MdOutlineArrowDropDown, MdOutlineArrowDropUp } from 'react-icons/md';
 
 interface InputSelectProps {
   listOptions: IInputSelect[];
@@ -29,12 +29,12 @@ const InputSelect = ({
     <button
       className={classNames({
         [style.button]: true,
-        [style["button--active"]]: optionList !== "",
+        [style['button--active']]: optionList !== '',
       })}
       onClick={() => toogleButton()}
       onBlur={() => setShowButton(false)}
     >
-      <span>{NameOpition || "Ordenar por:"}</span>
+      <span>{NameOpition || 'Ordenar por:'}</span>
       {showButton ? (
         <MdOutlineArrowDropUp size={24} />
       ) : (
@@ -42,7 +42,7 @@ const InputSelect = ({
       )}
       <div
         className={`${style.button__options} ${
-          showButton ? style["button__options--active"] : ""
+          showButton ? style['button__options--active'] : ''
         }`}
       >
         {listOptions.map((option) => {

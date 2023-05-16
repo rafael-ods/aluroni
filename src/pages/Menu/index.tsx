@@ -1,19 +1,19 @@
-import { useState } from "react";
-import Input from "components/Input";
-import style from "./style..module.scss";
-import { dataButton } from "components/ButtonFilters/dataButton";
-import ButtonFilters from "components/ButtonFilters";
-import InputSelect from "components/InputSelect";
-import { dataInput } from "components/InputSelect/dataInput";
-import Cards from "components/Cards";
-const Home = () => {
-  const [search, setSearch] = useState("");
+import { useState } from 'react';
+import Input from 'components/Input';
+import style from './style..module.scss';
+import { dataButton } from 'components/ButtonFilters/dataButton';
+import ButtonFilters from 'components/ButtonFilters';
+import InputSelect from 'components/InputSelect';
+import { dataInput } from 'components/InputSelect/dataInput';
+import Cards from 'components/Cards';
+const Menu = () => {
+  const [search, setSearch] = useState('');
   const [selectedFilter, setSelectedFilter] = useState<number | null>(null);
-  const [opitonList, setOpitionList] = useState("");
+  const [opitonList, setOpitionList] = useState('');
   return (
     <main>
-      <section className={style.home}>
-        <h3 className={style.home__title}>Cardápio</h3>
+      <section className={style.menu}>
+        <h3 className={style.menu__title}>Cardápio</h3>
         <Input
           type="text"
           required
@@ -21,7 +21,7 @@ const Home = () => {
           placeholder="Digite aqui sua busca"
           setValue={(value) => setSearch(value)}
         />
-        <div className={style.home__filters}>
+        <div className={style.menu__filters}>
           <ButtonFilters
             buttonFilters={dataButton}
             selectedFilter={selectedFilter}
@@ -39,4 +39,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Menu;

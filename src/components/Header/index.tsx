@@ -1,11 +1,11 @@
-import style from "./header.module.scss";
-import { ReactComponent as Logo } from "assets/image/logo.svg";
+import style from './header.module.scss';
+import { ReactComponent as Logo } from 'assets/image/logo.svg';
 const Header = () => {
   return (
     <header className={style.header}>
       <nav className={style.headerMenu}>
         <a href="/">
-            <Logo/>
+          <Logo/>
         </a>
       </nav>
       <div className={style.headerBanner}>

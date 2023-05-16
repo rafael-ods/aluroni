@@ -1,11 +1,11 @@
-import { ReactElement } from "react";
-import style from "./style.module.scss";
+import { ReactElement } from 'react';
+import style from './style.module.scss';
 interface ButtonProps {
   children: ReactElement | string;
-  type: "button" | "submit" | "reset" | undefined;
+  type: 'button' | 'submit' | 'reset' | undefined;
 }
 
-const Button = ({ children, type = "button" }: ButtonProps) => {
+const Button = ({ children, type = 'button' }: ButtonProps) => {
   return (
     <button className={style.button} type={type}>
       {children}

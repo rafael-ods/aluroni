@@ -1,5 +1,16 @@
 @import 'styles/variable';
 
+$massas: #d73b3b;
+$carnes: #30201e;
+$combos: #e6c864;
+$veganos: #80aa40;
+
+@mixin color-transition {
+  color: white;
+  transition: .3s background-color ease-in-out
+}
+
+
 .filterGroup {
     display: flex;
     gap: 24px;
@@ -16,11 +27,25 @@
       height: 40px;
       justify-content: center;
       width: 150px;
-      &--active {
-        background-color: $blue;
-        color: white;
-        transition: .3s background-color ease-in-out;
-      }
+        &__Massas {
+          background-color: $massas;
+          @include color-transition()
+        }
+        &__Carnes {
+          background-color: $carnes;
+          @include color-transition()
+
+        }
+        &__Combos {
+          background-color: $combos;
+          @include color-transition()
+        }
+        &__Veganos {
+          background-color: $veganos;
+          @include color-transition()
+
+        }
+       
       &:hover {
         cursor: pointer;
       }
