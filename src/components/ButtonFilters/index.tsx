@@ -1,6 +1,6 @@
-import { IButtonFilter } from 'shared/interface/IButtonFilter';
-import style from './buttonfilter.module.scss';
-import classNames from 'classnames';
+import { IButtonFilter } from "shared/interface/IButtonFilter";
+import style from "./buttonfilter.module.scss";
+import classNames from "classnames";
 interface ButtonFilterProps {
   buttonFilters: IButtonFilter[];
   selectedFilter: number | null;

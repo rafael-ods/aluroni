@@ -1,18 +1,18 @@
 export const dataButton = [
   {
-    label: 'Massas',
+    label: "Massas",
     id: 1
   },
   {
-    label: 'Carnes',
+    label: "Carnes",
     id: 2
   },
   {
-    label: 'Combos',
+    label: "Combos",
     id: 3
   },
   {
-    label: 'Veganos',
+    label: "Veganos",
     id: 4
   }
 ];

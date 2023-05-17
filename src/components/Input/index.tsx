@@ -1,8 +1,8 @@
-import style from './input.module.scss';
-import { CgSearch } from 'react-icons/cg';
+import style from "./input.module.scss";
+import { CgSearch } from "react-icons/cg";
 
 interface InputProps {
-  type: 'text' | 'email' | 'password';
+  type: "text" | "email" | "password";
   value: string;
   required?: boolean;
   placeholder: string;
@@ -13,7 +13,7 @@ const Input = ({
   value,
   setValue,
   placeholder,
-  type = 'text',
+  type = "text",
   required = false,
 }: InputProps) => {
   return (
